@@ -1,8 +1,136 @@
 <!DOCTYPE html>
 <head>
-
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body>
-    <p>Hello World!</p>
+    <hr id="starter"/>
+    <div id="block">
+        <h1 id="title" align="center">Chase: A Case Study</h1>
+
+        <div class="project_overview">
+            <h2>Project Overview</h2>
+            <div id="project_overview_content">
+                <p>As part of UC San Diego's "Data-Driven UX/Product Design" course,
+                    I was tasked in a team of three to extend or redesign a feature that helps a specific
+                    type of user save for a trip. Within the ten-week time frame of the course,
+                    our team learned about the UX/product design process consisting of interviewing,
+                    wire framing, competitive audits, and high fidelity prototyping using Figma.
+                <br><br>
+                    Within the team, I specialized on user testing and analysis, as well as creating 
+                    prototypes using Figma. 
+                </p>
+
+                <h3>Our User</h3>
+                <p>
+                    Our team decided to use young adults (ages 18 - 25) as our target users. We believe they are ideal target users based on the following reasons.
+                </p>
+                <ol>
+                    <li>The young adult population accounts about 15% of the United States (approximately 40 million) according to the 2010 Census Summary from the U.S. Census Bureau.</li>
+                    <li>As we on the team are part of the young adult population, we have many college friends and acquaintances that we can tap into their thoughts about saving. Through our work and personal relationships, we also have a good handful of those who are more mature young adults that we can contact about how they go about saving.</li>
+                    <li>Many young adults have growing pains financially.</li>
+                </ol>
+
+                <h3>User Goals</h3>
+                <ul>
+                    <li>list an expense they consider as high-cost</li>
+                    <li>define a time frame to when they should have saved enough money by</li>
+                    <li>to be more in control of their budgeting in order to achieve the goal</li>
+                    <li>develop better money handling skills</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="the_problem">
+            <h2>The Problem</h2>
+            <div id="the_problem_content">
+                <p style="color:blue">"Young adults should be provided a way to keep track of their saving so that they can successfully buy a high-cost expense they anticipate ahead of time and build better saving habits."</p>
+                <p>There are often times when we knew we had to save up for a large purchase/expense, but leading up to it, we did not budgeted enough, leaving us to delay or even skip the purchase or look into less than ideal alternatives. 
+                        <br><br>
+                        For example, one of us knew a year in advance that he needed to save at least $6k for a three-week vacation in Japan. Because he did not keep himself accountable on his spending and not regularly checking his bank account, he ended up short of the budget he wanted to save in the beginning, which forced him to replan what he was going to do in Japan.
+                        <br><br>
+                        With our saving feature, he could have defined how much he wanted to save within a time frame, and the app will help him manage how he is doing by showing his progress on it and send him regular notifications to keep him on track. With that said, this feature could be a great and feasible way to reach their saving goals, and we can help them realize that.
+                        </p>
+
+                <h3>Need Finding & User Research</h3>
+                <p>
+                    The first step of our design process was to conduct need-finding to understand our target audience and issues they had with the current Chase mobile application.
+                    <br>
+                    <b>Surveys:</b><br>
+                    Our team chose surveys as our primary research method. We wanted to find common patterns or trends that people share while saving for a high-cost purchase. This allowed us to narrow down our user target and gives us a general consensus to what users probably want and don’t want in a saving feature. 
+                    Since finance can be a sensitive and confidential matter, we believed that some users would not feel comfortable sharing financial information through direct obeservation, so we kept our  surveys as anonymous to encourage more people to take the survey and gain more insight into our research goals. We left an option for users to leave their emails if they allow us to interview them.
+                    <br><b>Interviews:</b><br>
+                    Our team interviewed survey participants who were willing to give us more information
+                    about: <br>
+                    how they determine if they can spend on an item or not, <br>
+                    how they go about saving for a long period of time, <br>
+                    and how they navigate and budget with their banking apps and what can be improved. <br>
+
+                    We chose interviews as our secondary research method because made up the qualities that surveys lacked: 
+                    it allowed us to ask follow up questions based on their answers,
+                    and it gives us more valuable research that our team needs, which may be misinterpreted by the questions we ask in surveys
+                </p>
+
+                <h3>Research Findings</h3>
+                <p>The major findings of our surveys and interviews are summarized below:</p>
+                <img src="resources/findings.PNG" class="img_center">
+                <b>Core Pain Points:</b>
+                <ol>
+                    <li>Lack of visual charts or trend maps</li>
+                    <p>Subjects expressed how current applications were lacking data from previous months. Thiey expressed how they would like a trend or pie chart for savings and spending. Additionally, they expressed that they had a lot of manual work to do such as keeping a spreadsheet up to date, and how it would be easier if data was automatically inputted from banking information and added to a visualization.</p>
+                    <li>Inflexible UI and functionality</li>
+                    <p>Subjects expressed how current banking applications have an undesirable UI that provides just the baseline functionality of  transactions and savings. Feedback for functionality is that it is sometimes slow or unresponsive, and hard to find features within the application.</p>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="design_process">
+            <h2>Design Process</h2>
+            <div id="design_process_content">
+                <h3>Competitive Analysis</h3>
+                <p>A prime motive towards this redesign was inspired by our experiences with current budget management applications. Thus, to gauge how we should improve Chase, we performed a competitive audit on existing money management applications to weigh pros and cons of potential features.</p>
+                <img src="resources/competitive_audit.PNG" class="img_center">
+                <p>Wealthfront, Qapital and Digit are successful savings apps that center around ease of use via automatic deposits. With an easy way to customize goals and a passive way to build savings towards them, they make it easy to set and forget such that saving towards the goal is not a time consuming activity. We should maintain the simplicity of use and passive savings aspect so that saving is not a burden for our product feature. 
+                        Mint allows for organizing budgets to see spending habits and promotes better spending. Ease of organizing spending and goals should be part of the solution for a savings app.</p>
+           
+                <h3>UX Flows</h3>  
+                <p>We created user flows to see how users could accomplish two core tasks. The tasks were to see current savings progress, and adjust budgets.</p>
+                <div class="row">
+                    <div class="column">
+                        <img src="resources/uxflow_1.PNG" class="img_center">
+                    </div>
+                    <div class="column">
+                        <img src="resources/uxflow_2.PNG" class="img_center">     
+                    </div>
+                </div>
+
+                <h3>UI Sketches</h3>
+                <p>[Insert Images]</p>
+            </div>
+        </div>
+
+        <div class="prototypes">
+            <h2>Prototypes</h2>
+            <div id="prototypes_content">
+                <h3>Paper Prototypes</h3>
+                <p>[Insert Image]</p>
+                <h3>First Pass - High Fidelity Prototypes</h3>
+                <p>[Insert Image]</p>
+                <h3>Second Pass - High Fidelity Prototypes</h3>
+                <p>[Insert Image]</p>
+            </div>
+        </div>
+
+
+        <div class="reflection">
+            <h2>Reflection</h2>
+            <p>Ultimately, I learned a lot this case study about the design process and user experience. I learned that user testing and feedback is critical in the design process, and that each reiteration brought about a better product. It was satisfying to see how we found an issue among our target population regarding saving up for a trip and were able to design a better and better product for our target as we took their feedback into account. A key insight that I gained was that target users strongly favored simplicity and minimalism in regard to financial management applications. I observed this when we had two paper prototypes, and one had more data and functionality on the screen than the other. Most users preferred the minimal prototype. Furthermore, as we iterated on that design people still critiqued the flow and user experience, wanting it to be faster and to cut unnecessary data. These iterations resulted in our final extension that had minimal steps to accomplish a task, and carefully selected ways to display data. We had to carefully select how we were displaying information because users would get confused when trying to interpret it. For example, we were displaying progress as a fraction, but users preferred progress bars, and users did not like pie charts in regards to displaying progress towards a goal. During user testing this confusion would get them hung up on certain screens for longer and make them ask questions. Overall, we hope that we were able to create a product that is as minimal as users would expect, yet provide essential features missing in existing applications. 
+                    <br>Additionally, I really liked how our feature was just an extension on the Chase mobile application. It is just an added module within the Chase application, so it would not conflict with the current user experience for veteran Chase users. I look forward to when we implement the functionality, and then perform more user testing. More user testing would help us focus in on the question if we made it too minimal? A concern is that we may have desired functionality that we are missing, and user testing would address that. 
+                    </p>
+        </div>
+
+    </div>
+    
 </body>
